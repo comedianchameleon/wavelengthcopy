@@ -1,0 +1,7 @@
+[
+{"title":"Staff","isPrivate":true,"staffRoom":true,"staffAutojoin":true,"introMessage":"List private chat room names here: testing,","aliases":["auth"]},
+{"title":"YouBanistan","isPrivate":true,"staffRoom":true,"staffAutojoin":true,"addedUsers":{},"introMessage":"To do: <br>Allow voices (maybe players?) to start games<br>Broadcast started tours/games in Games room<br>Find a Theme + Mouse Icon + unown chat/usernames?"},
+{"title":"Games","isOfficial":true,"autojoin":true,"desc":"Tournaments and other Games are regularly hosted here!","aliases":["tournaments"]},
+{"title":"Lobby","isOfficial":true,"autojoin":true,"desc":"Worst. Idea. Ever.","introMessage":"<b><font size=\"6\">Welcome to <i>Core</i>!</font></b><br><font size=\"5\">We host all sorts of Games and Tournaments for you and your friends!<br>Ask one of our friendly <button name=\"send\" value=\"/auth\"><font size=\"5\"><b>Staff</b></font></button> for information or help!</font>","auth":{},"modchat":false},
+{"title":"testing","modjoin":"&","isPrivate":"hidden","introMessage":"<div class=\"picon\" style=\"background: url(&quot;https://play.pokemonshowdown.com/sprites/smicons-sheet.png?a1&quot;) no-repeat scroll -165px -2730px\">testinglol</div>","aliases":["test"]}
+]
