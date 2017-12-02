@@ -24,10 +24,21 @@ div#room-lobby.ps-room.ps-room-light {
 div#room-games.ps-room.ps-room-light {
 	background: rgba(120, 200, 255, 0.85);
 }
-div.maintabbarbottom {
+.maintabbarbottom {
 	background: #96469685;
 }
-a.roomtab.button {
+.tabbar a.button {
 	background: linear-gradient(to bottom,#ff008fbd,#b7236061);
+	border-color: #ffffff;
 	color: #ffffff;
+	text-shadow: none;
+}
+.tabbar a.button:hover {
+	background: #96469685
+}
+.tabbar .button.subtle-notifying{
+	color:#96469685!important
+}
+.tabbar .button.cur.subtle-notifying{
+	color:#96469685!important
 }
