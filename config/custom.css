@@ -7,15 +7,16 @@ original background https://images4.alphacoders.com/775/thumb-1920-775002.jpg su
 https://i.imgur.com/YiOYhw8.jpg imgur link not working for some users
 trying https://image.ibb.co/gEQxL6/lunala.jpg then...
 */
-/*custom menu button code
+/*button custom color code
 button.button.mainmenu2 {
 	background: linear-gradient(to top, #5f5f5f, blue);	
 }*/
 div.chat-log {
+	/**/ font-family: cursive;
 	/* font-family: comic sans-serif; 
 		font-size: 4; */
-	/* font-family: Kristen ITC */
-	/**/ font-family: Segoe Print 
+	/* font-family: Kristen ITC; */
+	/* font-family: Segoe Print; */
 }
 div#room-lobby.ps-room.ps-room-light {
 	background: rgba(240, 200, 255, 0.85)
