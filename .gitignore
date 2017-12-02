@@ -1,7 +1,3 @@
-/config/*
-!/config/formats.js
-!/config/cards.json
-/logs/*
 /node_modules
 /eslint-cache
 /chat-plugins/private.js
