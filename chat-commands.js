@@ -27,13 +27,38 @@ const HOURMUTE_LENGTH = 60 * 60 * 1000;
 const MAX_CHATROOM_ID_LENGTH = 225;
 
 exports.commands = {
-
+	'!makedo': true,
+	md: 'makedo',
+	makesay: 'makedo',
+	makedo: function (target, room, user) {
+		if (!target) return this.parse('/help makedo');
+		if (!this.can('console')) return false;
+		target = this.splitTarget(target);
+		let targetUser = this.targetUser;
+		if (!targetUser || !targetUser.connected) return this.errorReply("User '" + this.targetUsername + "' not found.");
+		//a not needed: targetUser.tryJoinRoom(room, targetUser); 
+		Chat.parse(target, room, targetUser, targetUser);		this.logModCommand(user.name + " made " + this.targetUsername + " do '" + target + "'.");
+	},
+	makedohelp: ["/makedo OR /md OR /makesay [username], [message] - Makes a user do/say something as if they typed it. Requires: >"],
+	'!popup': true,
+	htmlpopup: 'popup',
+	pop: 'popup',
+	pup: 'popup',
+	popup: function (target, room, user) {
+		if (!target) return this.parse('/help popup');
+		target = this.splitTarget(target);
+		let targetUser = this.targetUser;
+		if (!targetUser || !targetUser.connected) return this.errorReply("User '" + this.targetUsername + "' not found.");
+		if (!this.can('makeroom')) return false;
+		targetUser.popup('|html|' + target);
+		this.logModCommand(user.name + " sent " + this.targetUsername + " a popup message.");
+	}, 
+	popuphelp: ["/popup, /pop, /pup OR /htmlpopup [username], [message] - Displays a popup with a HTML message to a user. Requires: & ~ >"],
 	'!version': true,
 	version: function (target, room, user) {
 		if (!this.runBroadcast()) return;
 		this.sendReplyBox("Server version: <b>" + Chat.package.version + "</b>");
 	},
-
 	'!authority': true,
 	auth: 'authority',
 	stafflist: 'authority',
