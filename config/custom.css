@@ -12,22 +12,22 @@ button.button.mainmenu2 {
 	background: linear-gradient(to top, #5f5f5f, blue);	
 }*/
 div.chat-log {
-	/**/ font-family: cursive,Segoe Print,Arial;
+	/**/ font-family: cursive;
 	/* font-family: comic sans-serif;
 		font-size: 4; */
 	/* font-family: Kristen ITC */
 	/* font-family: Segoe Print */
 }
 div#room-lobby.ps-room.ps-room-light {
-	background: rgba(240, 200, 255, 0.85)
+	background: rgba(240, 200, 255, 0.85);
 }
 div#room-games.ps-room.ps-room-light {
-	background: rgba(120, 200, 255, 0.85)	
+	background: rgba(120, 200, 255, 0.85);
 }
 div.maintabbarbottom {
-	background: #96469685
+	background: #96469685;
 }
 a.roomtab.button {
-	background: linear-gradient(to bottom,#ff008fbd,#b7236061)
-	color: #ffffff
+	background: linear-gradient(to bottom,#ff008fbd,#b7236061);
+	color: #ffffff;
 }
