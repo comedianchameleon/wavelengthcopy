@@ -728,7 +728,7 @@ class GlobalRoom extends BasicRoom {
 	 */
 	onCreateBattleRoom(p1, p2, room, options) {
 		if (Config.reportbattles) {
-			let reportRoom = Rooms(Config.reportbattles === true ? 'lobby' : Config.reportbattles);
+			let reportRoom = Rooms(Config.reportbattles === true ? 'games' : Config.reportbattles);
 			if (reportRoom) {
 				reportRoom
 					.add(`|b|${room.id}|${p1.getIdentity()}|${p2.getIdentity()}`)
