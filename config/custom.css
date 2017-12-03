@@ -24,13 +24,13 @@ div#room-lobby.ps-room.ps-room-light {
 div#room-games.ps-room.ps-room-light {
 	background: rgba(120, 200, 255, 0.85);
 }
-a.roomtab.button {
+/*a.roomtab.button {
 	background: #92558a9c;
 	border-color: #ffffff;
 	color: #ffffff;
 	text-shadow: none;
 }
-/*.maintabbarbottom {
+.maintabbarbottom {
 	background: #96469685;
 }
 .tabbar a.button:hover {
