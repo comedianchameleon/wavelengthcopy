@@ -24,7 +24,7 @@ div#room-lobby.ps-room.ps-room-light {
 div#room-games.ps-room.ps-room-light {
 	background: rgba(120, 200, 255, 0.85);
 }
-.tabbar a.button {
+a.roomtab.button {
 	background: linear-gradient(to bottom,#ff008fbd,#b7236061);
 	border-color: #ffffff;
 	color: #ffffff;
